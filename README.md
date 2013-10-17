@@ -1,6 +1,6 @@
 # ZF2 API documented by Swagger
 
-This is an example application showing how to document a ZF2 RESTful API using [Swagger](https://github.com/zircote/swagger-php) and the [ZF2 Swagger module](https://github.com/outeredge/SwaggerModule).
+This is an example application showing how to document a ZF2 RESTful API using [Swagger](https://github.com/zircote/swagger-php).
 
 ## Requirements
 
@@ -21,3 +21,11 @@ This is an example application showing how to document a ZF2 RESTful API using [
     ```
     php composer.phar install
     ```
+
+3. Generate the static json swagger documentation using the following command:
+
+    ```
+    php vendor/bin/swagger module/ -o public/docs/
+    ```
+
+4. Host the generated files where they are accessible by [Swagger UI](https://github.com/wordnik/swagger-ui) to generate the HTML documentation

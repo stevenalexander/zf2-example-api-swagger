@@ -4,6 +4,27 @@ namespace AlbumApi\Controller;
 use AlbumApi\Controller\AbstractRestfulController;
 use Zend\View\Model\JsonModel;
 
+/**
+ * @SWG\Resource(
+ *     apiVersion="1.0.0",
+ *     swaggerVersion="1.2",
+ *     resourcePath="/album",
+ *     basePath="http://zf2-example-api-swagger/album"
+ * )
+ *
+ * @SWG\Api(
+ *     path="/album/{albumId}",
+ *     description="Operations about albums",
+ *     @SWG\Operations(
+ *         @SWG\Operation(
+ *             method="GET", summary="Find album by ID", notes="Returns an album based on ID", type="Album", nickname="get"
+ *         ),
+ *         @SWG\Operation(
+ *             method="DELETE", summary="Delete album by ID", notes="Returns confirmation string", type="Album", nickname="delete"
+ *         )
+ *     )
+ * )
+ */
 class AlbumController extends AbstractRestfulJsonController
 {
     public function getList()

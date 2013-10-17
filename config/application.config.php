@@ -1,7 +1,7 @@
 <?php
 return array(
     'modules' => array(
-        'AlbumApi',
+        'AlbumApi'
     ),
     'module_listener_options' => array(
         'module_paths' => array(
